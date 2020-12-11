@@ -1,18 +1,18 @@
 $("#order").on("submit", function() {
-  var formValid = true;
+ var formValid = true;
 
   if( $("#name").prop("validity").valid ) {
 
   $("#nameError").addClass("hidden");
 
-} else {
+ } else {
 
   $("#nameError").removeClass('hidden');
 
   formValid = false;
-}
+ }
 
-    if( $("box-email").prop("validity").valid ) {
+    if( $("#box-email").prop("validity").valid ) {
 
     $("#emailError").addClass("hidden");
 
@@ -21,9 +21,9 @@ $("#order").on("submit", function() {
   $("#emailError").removeClass('hidden');
 
   formValid = false;
-}
+ }
 
-    if( $("tickets").prop("validity").valid ) {
+    if( $("#tickets").prop("validity").valid ) {
 
     $("#ticketsError").addClass("hidden");
 
@@ -33,7 +33,8 @@ $("#order").on("submit", function() {
   $("#ticketsError").removeClass('hidden');
 
   formValid = false;
-}
+ }
+ console.log(formValid)
   return formValid;
 });
 

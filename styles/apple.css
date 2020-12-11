@@ -144,9 +144,6 @@ header{
     margin: 15px;
 }
 
-#tickets{
-    width:50px;
-}
 
 .first{
     display: flex;
@@ -207,9 +204,38 @@ header{
     margin-left: 300px;
 }
 
+.formFeed{
+    color: #d93636;
+    font-size:14px;
+}
+
+#name{
+    width:80px;
+}
+
+#box-email{
+    width:80px;
+}
+
+#tickets{
+    width:30px;
+}
+
+#ticketsError{
+    margin-left: 158px;
+}
+
 .hidden{
     display: none;
 }
+
+.submission{
+    display: flex;
+    padding-top:10px;
+    margin-left: 250px;
+
+}
+
 
 /* mobile */
 @media (max-width: 600px) {
@@ -229,6 +255,16 @@ header{
         display: flex;
         flex-direction: column;
     }
+    .formFeed{
+        font-size:13px;
+    }
+    #ticketsError{
+        margin-left: 158px;
+    }
+    .submission{
+        margin-left: 280px;
+    }
+
 }
 
 

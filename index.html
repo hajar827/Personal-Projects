@@ -35,10 +35,11 @@
        <h3>Pre-Order Tickets</h3>
 
     <form id="order" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+   <fieldset>
    <div class="first">
    <label for ="name"> Name:</label>
    <div class="box">
-   <div class="errorName hidden" id="nameError">
+   <div class="formFeed hidden" id="nameError">
        Please provide a name
    </div>
    <input
@@ -51,7 +52,7 @@
    <div class=second>
    <label for="box-email"> Email: </label>
    <div class="box">
-   <div class="errorEmail hidden" id="emailError">
+   <div class="formFeed hidden" id="emailError">
        Please provide an email
    </div>
    <input
@@ -63,7 +64,7 @@
 
    <div class="third">
     <div class="box">
-    <div class="errortickets hidden" id="ticketsError">
+    <div class="formFeed hidden" id="ticketsError">
     Please select at least one ticket
     </div>
    <label for="tickets"> Number of Tickets: </label>
@@ -71,27 +72,32 @@
        type="number"
        name="Number of Tickets:"
        id="tickets"
-       value="0" min="0" required/>
+       value="0" min="1" required/>
    </div>
     </div>
 
    <p> Pickup Location </p>
-   <input
+   <input checked
        type="radio"
        name="entrances"
+       value="City Hall"
        id="button1"/>
    <label for="button1"> City Hall </label>
 
    <input
         type="radio"
         id="button3"
+        value="Cornell Store"
         name="entrances"/>
    <label for="button3"> Cornell Store </label>
 
+   <div class="submission">
    <input
         type="Submit"
         value="Pre Order"
         />
+    </div>
+    </fieldset>
    </form>
 
     <!--Source: <cite><a href= "https://fingerlakes1.com/2017/10/01/gallery-first-day-of-ithaca-apple-harvest-festival/"> Cornell</a> </cite> -->
