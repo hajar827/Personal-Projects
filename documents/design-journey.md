@@ -142,7 +142,25 @@ TODO
 > Write your form validation pseudocode here.
 
 ```
-TODO
+When user submits form "On Form Submit snippet"
+
+if name is valid ("check validity" snippet)
+hide name feedback
+else
+show name feedback
+
+if email is valid ("check component validilty" snippet)
+hide email feedback
+else
+show feedback
+
+if numtickets component is valid ("check component validity" snippet)
+hide tickets feedback
+else
+show tickets feedback
+if the validility is fine send form to server submit snippet
+
+
 ```
 
 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Apple Harvest Fest</title>
+  <link rel="stylesheet" type="text/css" href="styles/apple.css"/>
+
+  <script src="scripts/jquery-3.5.1.js" type="text/javascript"> </script>
+  <script src="scripts/homepage.js" type="text/javascript" async> </script>
+
+</head>
+<body>
+    <div class="whole">
+    <header> <img src="documents/fest.jpg" width=600 height=200 alt="Apple Fest" class="images">
+    <!--Source: <cite><a href= "https://events.cornell.edu/event/apple_harvest_festival_7379"> Cornell</a> </cite> --> </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="transportation.html"> Transportation </a> </li>
+            <li> <a href="food.html"> Food </a> </li>
+        </ul>
+    </nav>
+    <main>
+    <h1>Apple Harvest Fest</h1>
+        <p>Downtown Ithaca will welcome a couple farmers to sell their harvest bounty throughout the week in a socially distant, de-densified version of a farmers market and cider trail happening on the Commons and inside downtown shops and restaurants in the district. Shops and restaurants who have safely reopened may feature apple & cider themed menus and gifts for sale too. The collection outlined on a Cider Trail.</p>
+    </main>
+    <section>
+       <h3>Tickets</h3>
+       <ul>
+         <li>Adults (Ages 18 and up) are $10 for admission.</li>
+         <li>Children (Aged 3 to 17) are $5 for admission.</li>
+       </ul>
+       <h3>Pre-Order Tickets</h3>
+
+    <form id="order" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+   <div class="first">
+   <label for ="name"> Name:</label>
+   <div class="box">
+   <div class="errorName hidden" id="nameError">
+       Please provide a name
+   </div>
+   <input
+       type="text"
+       name="Name"
+       id="name" required/>
+   </div>
+   </div>
+
+   <div class=second>
+   <label for="box-email"> Email: </label>
+   <div class="box">
+   <div class="errorEmail hidden" id="emailError">
+       Please provide an email
+   </div>
+   <input
+       type="email"
+       name="email"
+       id="box-email" required/>
+   </div>
+    </div>
+
+   <div class="third">
+    <div class="box">
+    <div class="errortickets hidden" id="ticketsError">
+    Please select at least one ticket
+    </div>
+   <label for="tickets"> Number of Tickets: </label>
+   <input
+       type="number"
+       name="Number of Tickets:"
+       id="tickets"
+       value="0" min="0" required/>
+   </div>
+    </div>
+
+   <p> Pickup Location </p>
+   <input
+       type="radio"
+       name="entrances"
+       id="button1"/>
+   <label for="button1"> City Hall </label>
+
+   <input
+        type="radio"
+        id="button3"
+        name="entrances"/>
+   <label for="button3"> Cornell Store </label>
+
+   <input
+        type="Submit"
+        value="Pre Order"
+        />
+   </form>
+
+    <!--Source: <cite><a href= "https://fingerlakes1.com/2017/10/01/gallery-first-day-of-ithaca-apple-harvest-festival/"> Cornell</a> </cite> -->
+    <h3>Social Media</h3>
+    <ul>
+        <li> <a href="https://www.facebook.com/downtownithaca"> Facebook </a> </li>
+        <li> <a href="https://twitter.com/downtownithaca"> Twitter </a> </li>
+        <li> <a href="https://www.youtube.com/user/downtownithaca"> Youtube </a> </li>
+        <li> <a href="https://www.instagram.com/downtownithaca/"> Instagram </a> </li>
+    </ul>
+    </section>
+    </div>
